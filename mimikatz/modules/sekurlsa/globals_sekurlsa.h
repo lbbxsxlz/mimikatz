@@ -9,7 +9,6 @@
 #include "../modules/kull_m_process.h"
 #include "../modules/kull_m_handle.h"
 #include "../modules/rpc/kull_m_rpc.h"
-#include "../dpapi/kuhl_m_dpapi_oe.h"
 
 typedef struct _RTL_BALANCED_LINKS {
 	struct _RTL_BALANCED_LINKS *Parent;
@@ -33,8 +32,7 @@ typedef struct _RTL_AVL_TABLE {
 	PVOID TableContext;
 } RTL_AVL_TABLE, *PRTL_AVL_TABLE;
 
-typedef struct _KIWI_GENERIC_PRIMARY_CREDENTIAL
-{
+typedef struct _KIWI_GENERIC_PRIMARY_CREDENTIAL {
 	LSA_UNICODE_STRING UserName;
 	LSA_UNICODE_STRING Domaine;
 	LSA_UNICODE_STRING Password;
